@@ -113,54 +113,23 @@ $("cci-swap").addEventListener("click", () => {
 
 const convertCurrency = (fromAmount, fromCurrency, toCurrency) => {
     switch (fromCurrency) {
-    case "thb":
-        switch (toCurrency) {
-        case "thb":
-            return fromAmount;
-            break;
-
-        case "usd":
-            return fromAmount * 0.03;
-            break;
-
-        case "eur":
-            return fromAmount * 0.026;
-            break;
-        }
-        break;
-
-    case "usd":
-        switch (toCurrency) {
-        case "thb":
-            return fromAmount * 33;
-            break;
-
-        case "usd":
-            return fromAmount;
-            break;
-
-        case "eur":
-            return fromAmount * 0.86;
-            break;
-        }
-        break;
-
-    case "eur":
-        switch (toCurrency) {
-        case "thb":
-            return fromAmount * 38.28;
-            break;
-
-        case "usd":
-            return fromAmount * 1.16;
-            break;
-
-        case "eur":
-            return fromAmount;
-            break;
-        }
-        break;
+    case "thb": switch (toCurrency) {
+        case "thb":return fromAmount;
+        case "usd": return fromAmount * 0.03;
+        case "eur": return fromAmount * 0.026;
     }
+
+    case "usd": switch (toCurrency) {
+        case "thb": return fromAmount * 33;
+        case "usd": return fromAmount;
+        case "eur": return fromAmount * 0.86;
+    }
+
+    case "eur": switch (toCurrency) {
+        case "thb": return fromAmount * 38.28;
+        case "usd": return fromAmount * 1.16;
+        case "eur": return fromAmount;
+    }}
 };
 
 (() => { updateHistory(); })();
