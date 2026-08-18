@@ -44,6 +44,7 @@ const saveToLocalStorage = (fromAmount, fromCurrency, toAmount, toCurrency) => {
     }
 
     content.push({
+        time: new Date().toLocaleTimeString(),
         fromAmount: fromAmount,
         fromCurrency: fromCurrency,
         toAmount: toAmount,
@@ -71,19 +72,21 @@ const updateHistory = () => {
     const container = $("history-container");
     if (container) {
         container.innerHTML = "";
-        for (let i = 0; i < history.length; i++) {
+        for (let i = history.length - 1; i >= 0; i--) {
+            let time = history[i].time;
             let fromAmount = history[i].fromAmount;
             let fromCurrency = history[i].fromCurrency;
             let toAmount = history[i].toAmount;
             let toCurrency = history[i].toCurrency;
 
-            container.innerHTML += constructHistoryCard(fromAmount, fromCurrency, toAmount, toCurrency);
+            container.innerHTML += constructHistoryCard(time, fromAmount, fromCurrency, toAmount, toCurrency);
         }
     }
 }
 
-const constructHistoryCard = (fromAmount, fromCurrency, toAmount, toCurrency) => `
+const constructHistoryCard = (time, fromAmount, fromCurrency, toAmount, toCurrency) => `
 <div class="conversion-history">
+    <span class="time">${time}</span>
     <div class="ch-unit-wrapper">
         <span class="value">${fromAmount}</span>
         <span class="currency">${fromCurrency}</span>
