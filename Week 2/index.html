@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Week 2 Assignment">
+        <meta name="author" content="Natthakit Thawaichai">
+
+        <title>Unnecessarily Glorified Currency Converter</title>
+
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="card">
+            <span class="card-header">Currency Converter</span>
+            <div class="currency-wrapper">
+                <div class="input-wrapper">
+                    <input type="text" id="ccf-from" placeholder="0.00">
+                    <select id="ccc-from">
+                        <option value="thb">THB</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+                <button id="cci-swap">Swap</button>
+                <div class="input-wrapper">
+                    <input type="text" id="ccf-to" placeholder="0.00">
+                    <select id="ccc-to">
+                        <option value="thb">THB</option>
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button id="cci-convert">Convert</button>
+                <button id="cci-reset">Reset</button>
+            </div>
+            <span class="card-footer">Natthakit Thawaichai - *CWR-CE306: Assignment 2</span>
+        </div>
+        <div class="card">
+            <span class="card-header">Conversion History</span>
+            <div id="history-container"></div>
+            <button id="hi-reset">Clear History</button>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
