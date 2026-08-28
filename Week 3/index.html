@@ -47,16 +47,54 @@
                     <span>Add New Record</span>
                 </button>
                 <button>
-                     <img src="./assets/trash.svg">
-                    <span>Remove Records</span>
+                    <img src="./assets/calc.svg">
+                    <span>Get Specfic Summary</span>
                 </button>
                 <button>
-                    <img src="./assets/calc.svg">
-                    <span>Get Summary</span>
+                     <img src="./assets/trash.svg">
+                    <span>Remove All Records</span>
                 </button>
             </div>
         </aside>
         <main id="main" class="main"></main>
+        <dialog id="add-new-record-dialogue" open>
+            <div class="header-container">
+                <h3>Add New Record</h3>
+                <span>Enter with absolute caution, this cannot be modified later.</span>
+            </div>
+            <div class="form-container">
+                <div class="input-container">
+                    <input type="text" id="" placeholder="Record Title">
+                    <input type="number" placeholder="0 THB ">
+                </div>
+                <textarea id="" placeholder="And a little more details..."></textarea>
+                <div class="select-container">
+                    <select id="">
+                        <option value="">Unspecified Type</option>
+                        <option value="income">I Earned</option>
+                        <option value="expense">I Spent</option>
+                    </select>
+                    <select id="">
+                        <option value="">Unspecified Sub-Category</option>
+                        <option value="expense">On Salary</option>
+                        <option value="expense">On Travel/Vacation</option>
+                        <option value="expense">On Transfer</option>
+                        <option value="expense">On Business Purchase</option>
+                        <option value="expense">On Investment</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button>
+                    <img src="./assets/delete.svg">
+                    <span>Clear</span>
+                </button>
+                <button class="important">
+                    <img src="./assets/note-add-white.svg">
+                    <span>Submit</span>
+                </button>
+            </div>
+        </dialog>
         <script src="./scripts/script.js"></script>
     </body>
 </html>
