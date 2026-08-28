@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative !important;
+    outline: none;
+    border: none;
+    font-family: "Noto Sans", sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+aside {
+    width: 17.5vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #203ed1, #253699);
+    border-right: 1px solid #000;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    color: #fff;
+
+    div.header-container {
+        width: 100%;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    div.button-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        h3 {
+            font-size: 15px;
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+
+        h3::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #fff;
+            border-radius: 2.5px;
+        }
+
+        button {
+            width: 100%;
+            height: 45px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: bold;
+            padding: 0 15px;
+            gap: 10px;
+
+            img {
+                height: 55%;
+            }
+        }
+
+        button:hover {
+            filter: brightness(90%);
+        }
+
+        button.important {
+            background-color: #fff;
+            color: #203ed1;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border-radius: 10px;
+            height: 45px;
+            font-size: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            height: 45px;
+            font-size: 15px;
+            padding: 0 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

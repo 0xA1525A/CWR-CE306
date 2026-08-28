@@ -118,13 +118,11 @@ const convertCurrency = (fromAmount, fromCurrency, toCurrency) => {
         case "usd": return fromAmount * 0.03;
         case "eur": return fromAmount * 0.026;
     }
-
     case "usd": switch (toCurrency) {
         case "thb": return fromAmount * 33;
         case "usd": return fromAmount;
         case "eur": return fromAmount * 0.86;
     }
-
     case "eur": switch (toCurrency) {
         case "thb": return fromAmount * 38.28;
         case "usd": return fromAmount * 1.16;

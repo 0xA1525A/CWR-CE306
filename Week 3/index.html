@@ -3,8 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>Electronic Ledger</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
     </head>
     <body>
+        <aside id="sidebar" class="sidebar">
+            <div class="header-container">
+                <h1>E-Ledger</h1>
+                <span>Income/Expense Recorder</span>
+            </div>
+            <div class="button-container">
+                <h3>Search</h3>
+                <input type="text" placeholder="What are you looking for?">
+                <button class="important">
+                    <img src="./assets/search.svg">
+                    <span>Search</span>
+                </button>
+                <h3>Filter</h3>
+                <select name="" id="type" value="">
+                    <option value="">Unspecified Type</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <select name="" id="sub-category" value="">
+                    <option value="">Unspecified Sub-Category</option>
+                    <option value="expense">Salary</option>
+                    <option value="expense">Travel/Vacation</option>
+                    <option value="expense">Transfer</option>
+                    <option value="expense">Business Purchase</option>
+                    <option value="expense">Investment</option>
+                </select>
+                <button class="important">
+                    <img src="./assets/filter.svg">
+                    <span>Apply Filter</span>
+                </button>
+                <button>
+                    <img src="./assets/no-filter.svg">
+                    <span>Clear Filter</span>
+                </button>
+                <h3>Interactions</h3>
+                <button class="important">
+                    <img src="./assets/note-add.svg">
+                    <span>Add New Record</span>
+                </button>
+                <button>
+                     <img src="./assets/trash.svg">
+                    <span>Remove Records</span>
+                </button>
+                <button>
+                    <img src="./assets/calc.svg">
+                    <span>Get Summary</span>
+                </button>
+            </div>
+        </aside>
+        <main id="main" class="main"></main>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>
