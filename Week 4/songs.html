@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ค้นหาเพลงลูกทุ่ง เพลงเหงา เพลงรัก และเพลงจากภาคอีสานกับภาคใต้">
+  <title>เสียงเพลงวันวาน | คลังเพลง</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="index.html"><span class="brand-icon">♫</span> เสียงเพลงวันวาน</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="เปิดเมนู"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="songs.html">คลังเพลง</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับเพลงลูกทุ่ง</a></li>
+      </ul></div>
+    </div>
+  </nav>
+
+  <header class="page-header"><div class="container py-5"><p class="eyebrow">THE COLLECTION</p><h1>คลังเพลงที่ชอบ</h1><p class="hero-lead mb-0">ค้นหาเพลงตามชื่อ อารมณ์ หรือภูมิภาค แล้วเลือกเพลงที่เข้ากับความรู้สึกของคุณ</p></div></header>
+
+  <main class="section-pad">
+    <div class="container">
+      <div class="filter-panel mb-4">
+        <div class="row g-3 align-items-end">
+          <div class="col-lg-6"><label class="form-label" for="songSearch">ค้นหาเพลง</label><input class="form-control form-control-lg" id="songSearch" type="search" placeholder="พิมพ์ชื่อเพลงหรือคำค้นหา..." autocomplete="off"></div>
+          <div class="col-sm-6 col-lg-3"><label class="form-label" for="moodFilter">อารมณ์เพลง</label><select class="form-select form-select-lg" id="moodFilter"><option value="all">ทุกอารมณ์</option><option value="sad">เหงา / เศร้า</option><option value="love">ความรัก</option><option value="memory">ความทรงจำ</option><option value="regional">กลิ่นอายท้องถิ่น</option></select></div>
+          <div class="col-sm-6 col-lg-3"><label class="form-label" for="regionFilter">ภูมิภาค</label><select class="form-select form-select-lg" id="regionFilter"><option value="all">ทุกภูมิภาค</option><option value="isan">อีสาน</option><option value="south">ภาคใต้</option><option value="other">อื่น ๆ / ยังไม่ระบุ</option></select></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3"><span id="resultCount" class="muted-copy small" aria-live="polite">กำลังโหลดรายการเพลง...</span><button id="clearFilters" class="btn btn-sm btn-outline-secondary" type="button">ล้างตัวกรอง</button></div>
+      </div>
+
+      <div class="row g-4" id="songGrid">
+        <div class="col-md-6 col-lg-4 song-item" data-title="คืนนี้เหงาเท่ากันไหม" data-mood="sad love" data-region="other" data-search="คืนนี้เหงาเท่ากันไหม เพลงเหงา คิดถึง กลางคืน">
+          <article class="song-card h-100"><div class="mini-cover art-rose"><span>01 / NIGHT MOOD</span><strong>คืนนี้<br>เหงาเท่ากันไหม</strong><b>☾</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-pink">เหงา</span><span class="tag">คิดถึง</span></div><h2 class="h5 mt-3">คืนนี้เหงาเท่ากันไหม</h2><p class="muted-copy">เพลงสำหรับคืนที่อยากรู้ว่าอีกคนกำลังรู้สึกเหมือนกันหรือเปล่า</p><p class="small song-meta">ภูมิภาค: ยังไม่ระบุในเว็บไซต์นี้</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=คืนนี้เหงาเท่ากันไหม">ค้นหาฟังเพลง ↗</a></div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 song-item" data-title="อย่าเปิดเพลงนั้น" data-mood="sad memory" data-region="other" data-search="อย่าเปิดเพลงนั้น เพลงเก่า ความทรงจำ เจ็บปวด">
+          <article class="song-card h-100"><div class="mini-cover art-gold"><span>02 / MEMORY LANE</span><strong>อย่าเปิด<br>เพลงนั้น</strong><b>♫</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-gold">ความทรงจำ</span><span class="tag">เพลงเศร้า</span></div><h2 class="h5 mt-3">อย่าเปิดเพลงนั้น</h2><p class="muted-copy">เพลงบางเพลงมีความทรงจำซ่อนอยู่มากกว่าที่คิด</p><p class="small song-meta">ภูมิภาค: ยังไม่ระบุในเว็บไซต์นี้</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=อย่าเปิดเพลงนั้น">ค้นหาฟังเพลง ↗</a></div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 song-item" data-title="เฟสก็หายไลน์ก็เงียบ" data-mood="sad love" data-region="other" data-search="เฟสก็หายไลน์ก็เงียบ เฟซบุ๊ก ไลน์ แชต ความรัก">
+          <article class="song-card h-100"><div class="mini-cover art-blue"><span>03 / NO REPLY</span><strong>เฟสก็หาย<br>ไลน์ก็เงียบ</strong><b>…</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-blue">ความรัก</span><span class="tag">รอข้อความ</span></div><h2 class="h5 mt-3">เฟสก็หายไลน์ก็เงียบ</h2><p class="muted-copy">ภาพของความสัมพันธ์ที่ค่อย ๆ เงียบลงในโลกออนไลน์</p><p class="small song-meta">ภูมิภาค: ยังไม่ระบุในเว็บไซต์นี้</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=เฟสก็หายไลน์ก็เงียบ">ค้นหาฟังเพลง ↗</a></div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 song-item" data-title="ขอนไม้กับเรือ" data-mood="love regional" data-region="south" data-search="ขอนไม้กับเรือ ลูกทุ่งใต้ เพลงใต้ เปรียบเทียบความรัก">
+          <article class="song-card h-100"><div class="mini-cover art-green"><span>04 / REGIONAL STORY</span><strong>ขอนไม้<br>กับเรือ</strong><b>≈</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-green">เพลงท้องถิ่น</span><span class="tag">ความรัก</span></div><h2 class="h5 mt-3">ขอนไม้กับเรือ</h2><p class="muted-copy">ตัวอย่างเพลงที่ชื่อชวนให้นึกถึงภาพเปรียบเทียบและเรื่องราวความสัมพันธ์</p><p class="small song-meta">ภูมิภาค: ภาคใต้ (ตามการจัดหมวดของเว็บไซต์)</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=ขอนไม้กับเรือ">ค้นหาฟังเพลง ↗</a></div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 song-item" data-title="เพลงลูกทุ่งอีสาน" data-mood="regional memory" data-region="isan" data-search="เพลงลูกทุ่งอีสาน หมอลำ พิณ แคน ภาษาถิ่น">
+          <article class="song-card h-100"><div class="mini-cover art-purple"><span>05 / ISAN SOUND</span><strong>เสียงเพลง<br>จากอีสาน</strong><b>♬</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-purple">อีสาน</span><span class="tag">ดนตรีพื้นถิ่น</span></div><h2 class="h5 mt-3">เสียงเพลงจากอีสาน</h2><p class="muted-copy">พื้นที่รวมเพลงลูกทุ่งอีสานและเสียงดนตรีที่มีเอกลักษณ์</p><p class="small song-meta">ภูมิภาค: อีสาน · หมวดรวมเพลง</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=เพลงลูกทุ่งอีสานยุค90">ค้นหาเพลงอีสาน ↗</a></div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 song-item" data-title="เพลงลูกทุ่งใต้" data-mood="regional memory" data-region="south" data-search="เพลงลูกทุ่งใต้ ภาคใต้ เพลงใต้ สำเนียงใต้">
+          <article class="song-card h-100"><div class="mini-cover art-orange"><span>06 / SOUTHERN SOUND</span><strong>เสียงเพลง<br>จากแดนใต้</strong><b>✳</b></div><div class="p-4"><div class="d-flex flex-wrap gap-2"><span class="tag tag-orange">ภาคใต้</span><span class="tag">ดนตรีพื้นถิ่น</span></div><h2 class="h5 mt-3">เสียงเพลงจากแดนใต้</h2><p class="muted-copy">สำรวจสำเนียง เรื่องราว และบรรยากาศของเพลงลูกทุ่งภาคใต้</p><p class="small song-meta">ภูมิภาค: ภาคใต้ · หมวดรวมเพลง</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=เพลงลูกทุ่งใต้ยุค90">ค้นหาเพลงใต้ ↗</a></div></article>
+        </div>
+      </div>
+      <div id="noResults" class="empty-state d-none"><span class="empty-icon">♫</span><h2 class="h4">ยังไม่พบเพลงที่ตรงกัน</h2><p class="muted-copy">ลองเปลี่ยนคำค้นหาหรือล้างตัวกรองดูนะ</p></div>
+      <p class="small muted-copy mt-4">หมายเหตุ: ลิงก์ “ค้นหาฟังเพลง” จะเปิดผลการค้นหาบน YouTube ไม่ใช่ไฟล์เสียงที่โฮสต์บนเว็บไซต์นี้ รายชื่อและการจัดหมวดบางส่วนเป็นตัวอย่างสำหรับงานเว็บไซต์</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>♫ เสียงเพลงวันวาน</span><span>เว็บไซต์เพื่อการศึกษา · My Interest Website with Bootstrap 5</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
