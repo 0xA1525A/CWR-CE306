@@ -19,6 +19,10 @@
                     <img src="./assets/search.svg">
                     <span>Search</span>
                 </button>
+                <button>
+                    <img src="./assets/delete-white.svg">
+                    <span>Clear Search</span>
+                </button>
                 <h3>Filter</h3>
                 <select name="" id="type" value="">
                     <option value="">Unspecified Type</option>
@@ -41,13 +45,17 @@
                     <img src="./assets/no-filter.svg">
                     <span>Clear Filter</span>
                 </button>
-                <h3>Interactions</h3>
+                <h3>Ledger Menu</h3>
                 <button class="important">
                     <img src="./assets/note-add.svg">
                     <span>Add New Record</span>
                 </button>
                 <button>
-                    <img src="./assets/calc.svg">
+                    <img src="./assets/chart.svg">
+                    <span>See Overview</span>
+                </button>
+                <button>
+                    <img src="./assets/sigma.svg">
                     <span>Get Specfic Summary</span>
                 </button>
                 <button>
@@ -86,12 +94,32 @@
             </div>
             <div class="button-container">
                 <button>
+                    <img src="./assets/xmark.svg">
+                    <span>Close</span>
+                </button>
+                <button>
                     <img src="./assets/delete.svg">
-                    <span>Clear</span>
+                    <span>Clear All</span>
                 </button>
                 <button class="important">
                     <img src="./assets/note-add-white.svg">
-                    <span>Submit</span>
+                    <span>Add New Record</span>
+                </button>
+            </div>
+        </dialog>
+        <dialog id="remove-all-confirmation-dialogue">
+            <div class="header-container">
+                <h3>Are you sure?</h3>
+                <span>Removing all records, this action <b>CANNOT</b> be undone.</span>
+            </div>
+            <div class="button-container all-equals">
+                <button>
+                    <img src="./assets/xmark.svg">
+                    <span>Cancel - Don't Touch Them</span>
+                </button>
+                <button class="important">
+                    <img src="./assets/trash.svg">
+                    <span>Confirm - Remove All Records</span>
                 </button>
             </div>
         </dialog>

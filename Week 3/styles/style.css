@@ -206,7 +206,6 @@ dialog[open] {
     }
 
     div.button-container > button {
-        width: 50%;
         height: 45px;
         font-size: 15px;
         border-radius: 10px;
@@ -225,16 +224,22 @@ dialog[open] {
             background-color: #fff;
             color: #203ed1;
             border: 1px solid #0006;
+            width: 27.5%;
         }
 
         &.important {
             background-color: #203ed1;
             color: #fff;
             border: none;
+            width: 45%;
         }
 
         &:hover {
             filter: brightness(90%);
         }
+    }
+
+    div.button-container.all-equals > button {
+        width: 100%;
     }
 }
